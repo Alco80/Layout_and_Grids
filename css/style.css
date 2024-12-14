@@ -29,11 +29,11 @@ body {
     "sidebar main"
     "footer footer";
 
-    transition: grid-template-columns 0.3s ease;
+  transition: grid-template-columns 0.3s ease;
 }
 
-body.sb-expand{
-    grid-template-columns: 12.5rem 1fr;
+body.sb-expand {
+  grid-template-columns: 12.5rem 1fr;
 }
 
 .dashboard-header,
@@ -78,7 +78,6 @@ body.sb-expand{
   gap: 1rem;
 }
 
-
 .dashboard-footer {
   grid-area: footer;
   font-weight: 100;
@@ -86,35 +85,40 @@ body.sb-expand{
   text-align: center;
 }
 
-.main-title{
-    font-size: 2.8rem;
+.main-title {
+  font-size: 2.8rem;
 }
 
-.main-title span{
-    font-weight: 100;
-    font-size: 2.4;
+.main-title span {
+  font-weight: 100;
+  font-size: 2.4;
 }
 
 /*************************************** MEDIA QUERIES ***************************************/
 
-@media (width > 768px){
-    .dashboard-main{
-        grid-template-columns: repeat(4, 1fr);
-    }
+@media (width > 768px) {
+  .dashboard-main {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-
-.card{
-    padding: 1rem;
-    min-block-size: 7rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 0.5rem;
+.card {
+  padding: 1rem;
+  min-block-size: 7rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
 }
 
-.card-1{
-    background-color: linear-gradient(
-        62deg,
-        rgb(251, 171, 126)
-        rgb(247, 206, 104)
-    );
+.card-1 {
+  background-image: linear-gradient(
+    62deg,
+    hsl(22, 94%, 74%),
+    rgb(247, 206, 104)
+  );
+}
+
+@media (width > 768px) {
+  .card-1 {
+    grid-area: 1 /1 / 2 / -1;
+  }
 }
