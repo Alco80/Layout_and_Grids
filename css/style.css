@@ -118,7 +118,10 @@ body.sb-expand {
 }
 
 @media (width > 768px) {
+  .card {
+    grid-column: span 2;
+  }
   .card-1 {
-    grid-area: 1 /1 / 2 / -1;
+    grid-column: span 4;
   }
 }
