@@ -25,5 +25,12 @@
     <footer class="dashboard-footer">
         <small>Footer</small>
     </footer>
+    <script>
+        const resizeBtn = document.getElementById('resize');
+        resizeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.toggle('sb-expand');
+        })
+    </script>
 </body>
 </html>
