@@ -51,6 +51,29 @@ body.sb-expand {
 .dashboard-header {
   grid-area: header;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-header a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1d1d29;
+    border: 2px solid rgb(60, 60, 60);
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.dashboard-header a:hover{
+    background-color: rgb(101, 101, 121);
+    color: #bebed3;
+}
+
+.dashboard-header a:visited{
+    background-color: rgb(7, 7, 136);
+    color: rgb(35, 29, 29);
 }
 
 .dashboard-sidebar {
@@ -92,6 +115,12 @@ body.sb-expand {
 .main-title span {
   font-weight: 100;
   font-size: 2.4;
+}
+
+.card-2 ul li {
+  font-size: 1.4rem;
+  font-weight: 100;
+  list-style: none;
 }
 
 /*************************************** MEDIA QUERIES ***************************************/
