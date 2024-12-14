@@ -125,3 +125,10 @@ body.sb-expand {
     grid-column: span 4;
   }
 }
+
+@media (width > 992) {
+  .card-2,
+  .card-3 {
+    grid-area: auto;
+  }
+}
