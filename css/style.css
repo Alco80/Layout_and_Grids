@@ -54,6 +54,17 @@ body {
   background-color: #1d1d29;
 }
 
+.dashboard-sidebar button{
+    position: absolute;
+    inset: 4.5rem -0.75rem auto auto;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    background-color: rgb(255, 255, 255);
+    border: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .dashboard-main {
   grid-area: main;
 }
