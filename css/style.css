@@ -96,7 +96,7 @@ body.sb-expand {
 
 /*************************************** MEDIA QUERIES ***************************************/
 
-@media (width > 768px) {
+@media screen and (min-width: 768px) {
   .dashboard-main {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -117,7 +117,7 @@ body.sb-expand {
   );
 }
 
-@media (width > 768px) {
+@media screen and (min-width: 768px) {
   .card {
     grid-column: span 2;
   }
@@ -126,9 +126,27 @@ body.sb-expand {
   }
 }
 
-@media (width > 992) {
+@media screen and (min-width: 992px) {
   .card-2,
   .card-3 {
+    grid-area: auto;
+  }
+
+  .card-4 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .card-5 {
+    grid-area: 3 / 2 / 4 / 2;
+  }
+  .card-6,
+  .card-7 {
+    grid-area: span 2 / auto;
+  }
+
+  .card-10,
+  .card-11,
+  .card-12,
+  .card-13 {
     grid-area: auto;
   }
 }
